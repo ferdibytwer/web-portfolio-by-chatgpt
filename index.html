@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio SPA</title>
+
+  <!-- Google Fonts (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white shadow fixed w-full z-50" role="banner">
+  <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center" aria-label="Main Navigation">
+    <h1 class="text-lg font-bold">MyPortfolio</h1>
+    <ul class="flex gap-4">
+      <li><button class="nav-link" data-target="hero">Home</button></li>
+      <li><button class="nav-link" data-target="about">About</button></li>
+      <li><button class="nav-link" data-target="portfolio">Portfolio</button></li>
+      <li><button class="nav-link" data-target="services">Services</button></li>
+      <li><button class="nav-link" data-target="testimonials">Testimonials</button></li>
+      <li><button class="nav-link" data-target="contact">Contact</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="pt-24">
+
+<!-- ================= HERO ================= -->
+<section id="hero" class="min-h-screen flex items-center" role="region" aria-labelledby="hero-title">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h2 id="hero-title" class="text-4xl font-bold mb-4">Hi, Saya Web Developer</h2>
+      <p class="mb-6">
+        Saya membangun website yang cepat, aman, dan aksesibel menggunakan teknologi modern.
+      </p>
+      <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded focus:outline-none focus:ring-4 focus:ring-blue-300">
+        Hubungi Saya
+      </a>
+    </div>
+    <img
+      src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+      alt="Seseorang sedang bekerja di depan laptop"
+      class="rounded-lg shadow"
+    />
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-20 bg-white" role="region" aria-labelledby="about-title">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 id="about-title" class="text-3xl font-bold mb-4">Tentang Saya</h2>
+    <p>
+      Saya adalah pengembang web yang fokus pada SPA, aksesibilitas (WCAG),
+      dan pengalaman pengguna yang inklusif.
+    </p>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section id="portfolio" class="py-20" role="region" aria-labelledby="portfolio-title">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 id="portfolio-title" class="text-3xl font-bold mb-8">Portfolio</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold">Project A</h3>
+        <p>Website Company Profile</p>
+      </article>
+      <article class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold">Project B</h3>
+        <p>Web App CRUD</p>
+      </article>
+      <article class="bg-white p-4 rounded shadow">
+        <h3 class="font-semibold">Project C</h3>
+        <p>Landing Page</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="py-20 bg-white" role="region" aria-labelledby="services-title">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 id="services-title" class="text-3xl font-bold mb-6">Layanan</h2>
+    <ul class="list-disc pl-6">
+      <li>Pembuatan Website</li>
+      <li>SPA Development</li>
+      <li>Optimasi Aksesibilitas (WCAG)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="testimonials" class="py-20" role="region" aria-labelledby="testimonials-title">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 id="testimonials-title" class="text-3xl font-bold mb-6">Testimoni</h2>
+    <blockquote class="bg-white p-6 rounded shadow">
+      <p>"Website sangat profesional dan mudah digunakan."</p>
+      <footer class="mt-2 text-sm">— Klien A</footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-20 bg-white" role="region" aria-labelledby="contact-title">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 id="contact-title" class="text-3xl font-bold mb-6">Kontak</h2>
+    <form class="space-y-4" aria-label="Contact Form">
+      <label class="block">
+        <span>Nama</span>
+        <input type="text" class="w-full border p-2 rounded" required />
+      </label>
+      <label class="block">
+        <span>Email</span>
+        <input type="email" class="w-full border p-2 rounded" required />
+      </label>
+      <label class="block">
+        <span>Pesan</span>
+        <textarea class="w-full border p-2 rounded" required></textarea>
+      </label>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded">
+        Kirim
+      </button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-white py-6" role="contentinfo">
+  <div class="max-w-7xl mx-auto px-4 text-sm">
+    <p>© 2025 MyPortfolio</p>
+    <p class="mt-2">
+      Image credit:
+      <a href="https://unsplash.com" class="underline">Unsplash</a> (Free for commercial use)
+      • Icons: Heroicons (MIT License)
+    </p>
+  </div>
+</footer>
+
+<!-- ================= SPA SCRIPT ================= -->
+<script>
+  document.querySelectorAll('.nav-link').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = document.getElementById(btn.dataset.target);
+      target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>
