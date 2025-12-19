@@ -1,0 +1,1 @@
+**Note** : Dalam pengembangan website ini, saya menggunakan ChatGPT sebagai asisten untuk penulisan kode dan ide, dengan seluruh keputusan teknis dan tanggung jawab website tetap berada pada pengembang.
